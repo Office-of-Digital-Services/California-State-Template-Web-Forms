@@ -1,45 +1,64 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="StateTemplateV5Beta.About" %>
-<%@ Register Src="~/modules/headerlargebanner.ascx" TagPrefix="uc1" TagName="headerlargebanner" %>
-<%@ Register Src="~/modules/headerprimarybanner.ascx" TagPrefix="uc1" TagName="headerprimarybanner" %>
-<%@ Register Src="~/modules/headerslideshowbanner.ascx" TagPrefix="uc1" TagName="headerslideshowbanner" %>
 
 <asp:Content ID="BannerContent" ContentPlaceHolderID="BannerContent" runat="server">
-    <%--<uc1:headerlargebanner runat="server" ID="headerlargebanner" />--%>
-    <%--<uc1:headerprimarybanner runat="server" ID="headerprimarybanner" />--%>
-    <%--<uc1:headerslideshowbanner runat="server" ID="headerslideshowbanner" />--%>
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Webforms Template Instructions</h1>
-	
-	
-	<ol>
-	<li>Copy css, fonts, images, and js folders to the root of your project<br /><br /></li>
+        <div class="container">
+            <div class="group">
+                <div class="half">
+                <article class="p-l-0">
+                    <h1>State Template v5</h1>
+                    <p>The California State Template is an open source web template and  standard offered by the California Department of Technology to state agencies and departments within the State of California and beyond. </p>
+                    <p>As part of this release  GitHub is leveraged  to provide and encourage better collaboration. The California state template is open sourced and belongs to the California web community and participation is welcome. </p>
 
-<li>Modify the Site.Master file to render state template css and JavaScript<br /><br /></li>
 
-<li>Add appropriate header and footer content to the Site.Master file<br /><br /></li>
+                    <p>
+                        The v5 release there will be several versions available namely HTML/Dreamweaver, .NET (MVC and Web Forms), PHP and WordPress.
+                    </p>
+                    <p>This is a living document and changes to this template, the sample and instructional pages are made daily and can be tracked on the <a href="https://github.com/Office-of-Digital-Innovation/California-State-Template-v5-Beta" target="_blank">GitHub Repository</a>.</p>
 
-<li>See the working examples on <a href="http://beta.template.webtools.ca.gov/sample/">CA State Template v5 Beta</a> site<br /></li>
+                    <p><span class="label label-info">Note:</span> You will be able to download each version using the GitHub repository links. Look for the &quot;Clone or Download&quot; button on the respective GitHub page.</p>
+                    <p>&nbsp;</p>
 
-</ol>
+                </article>
+                </div>
+                <div class="half">
+                <article class="p-t-md">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2><span class="ca-gov-icon-download"></span> Available Downloads</h2>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-standout">
+                                <li>
+                                    <a href="https://github.com/Office-of-Digital-Innovation/California-State-Template-v5-Beta" target="_blank"><strong>HTML/Dreamwever</strong></a><br>
+                                    This is the standard HTML/Dreamweaver package with sample content
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Office-of-Digital-Innovation/California-State-Template-MVC-v5-Beta" target="_blank"><strong>.NET(MVC)</strong></a><br>
+                                    This is the .NET MVC package that includes setup instructions
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Office-of-Digital-Innovation/California-State-Template-Web-Forms-Beta" target="_blank"><strong>.NET(Web Forms)</strong></a><br>
+                                    This is the .NET Web Forms package  that includes setup instructions
+                                </li>
+                                <li>
+                                    <strong><a href="https://github.com/Office-of-Digital-Innovation/California-State-Template-PHP-Beta" target="_blank">PHP</a></strong><br>
+                                    This is the PHP package that includes setup instructions
+                                </li>
+                                <li>
+                                    <strong><a href="http://caweb.ca.gov/" target="_blank">WordPress CMS</a></strong><br>
+                                    Please contact
+                                    <a href="mailto:Info.Eservices@state.ca.gov">Info.Eservices@state.ca.gov</a> for more information
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-</asp:Content>
-
-<asp:Content ID="SideColunmContent" ContentPlaceHolderID="AsideContent" runat="server">
-    
-	<div class="panel panel-standout highlight first">
-    <div class="panel-heading"><span class="triangle"></span>
-        <h2><span class="ca-gov-icon-info"></span>Additional Resources</h2>
-    </div>
-    <div class="panel-body">
-            <br />
-        <p><a href="http://beta.template.webtools.ca.gov">CA State Template v5 Beta</a>
-            <br />
-            <br />
-            <a href="https://github.com/Office-of-Digital-Innovation">Office of Digital Innovation GitHub</a>
-
-        </p>
-    </div>
+                </article>
+                    </div>
 </div>
+</div>
+
 </asp:Content>

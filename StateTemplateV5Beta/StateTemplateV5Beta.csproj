@@ -104,6 +104,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="images\images\" />
     <Folder Include="images\sample\charts\" />
     <Folder Include="images\sample\gallery\" />
     <Folder Include="images\sample\home\" />
@@ -122,6 +123,7 @@
     <Content Include="fonts\CaGov.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\background.jpg" />
     <Content Include="images\banner\banner-blank.png" />
     <Content Include="images\banner\banner-gal.png" />
     <Content Include="images\banner\banner-guy.png" />
@@ -247,7 +249,7 @@
     <Content Include="js\libs\d3.js" />
     <Content Include="js\libs\html5shiv.min.js" />
     <Content Include="js\libs\icon-fonts-ie7.js" />
-    <Content Include="js\libs\jquery-1.11.1.min.js" />
+    <Content Include="js\libs\jquery-1.12.4.min.js" />
     <Content Include="js\libs\mapthat_script.js" />
     <Content Include="js\libs\modernizr-2.0.6.min.js" />
     <Content Include="js\libs\modernizr-extra.min.js" />
@@ -262,6 +264,7 @@
     <Content Include="modules\headerlargebanner.ascx" />
     <Content Include="serp.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Structure.aspx" />
     <Content Include="Web.config" />
     <Content Include="packages.config" />
     <Content Include="fonts\CaGov.eot" />
@@ -338,6 +341,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Structure.aspx.cs">
+      <DependentUpon>Structure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Structure.aspx.designer.cs">
+      <DependentUpon>Structure.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
