@@ -249,7 +249,8 @@
     <Content Include="js\libs\d3.js" />
     <Content Include="js\libs\html5shiv.min.js" />
     <Content Include="js\libs\icon-fonts-ie7.js" />
-    <Content Include="js\libs\jquery-1.12.4.min.js" />
+    <Content Include="js\libs\jquery-3.2.1.min.js" />
+    <Content Include="js\libs\jquery-migrate-3.0.1.js" />
     <Content Include="js\libs\mapthat_script.js" />
     <Content Include="js\libs\modernizr-2.0.6.min.js" />
     <Content Include="js\libs\modernizr-extra.min.js" />

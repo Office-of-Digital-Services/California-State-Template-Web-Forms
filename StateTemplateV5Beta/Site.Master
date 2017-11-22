@@ -87,12 +87,21 @@ Select a color scheme:
 
 
 <!-- Load jQuery from CDN with fallback to local copy -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 <script>
     //Fall back to local copy if no jquery found
     if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='/js/libs/jquery-1.12.4.min.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='/js/libs/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
+</script>
+<!-- Load jQuery migrate from CDN with fallback to local copy -->
+<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+<script>
+        //Fall back to local copy if no jQuery migrate found
+        if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
+            document.write(unescape("%3Cscript src='/js/libs/jquery-migrate-3.0.1.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+
 </script>
 
 <!-- Include Google Analytics -->
