@@ -46,6 +46,10 @@ Select a color scheme:
 <link rel="stylesheet" href="/css/colorscheme-pasorobles.css">
 <link rel="stylesheet" href="/css/colorscheme-santabarbara.css">
 <link rel="stylesheet" href="/css/colorscheme-sierra.css">
+<link rel="stylesheet" href="/css/colorscheme-mono.css">
+<link rel="stylesheet" href="/css/colorscheme-eureka.css">
+<link rel="stylesheet" href="/css/colorscheme-trinity.css">
+<link rel="stylesheet" href="/css/colorscheme-sacramento.css">
 -->
 
 <link rel="stylesheet" href="/css/colorscheme-oceanside.css">

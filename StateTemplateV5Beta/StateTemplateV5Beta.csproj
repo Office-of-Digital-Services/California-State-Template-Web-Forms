@@ -116,7 +116,15 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="css\cagov.core.css" />
     <Content Include="css\cagov.font-only.css" />
+    <Content Include="css\colorscheme-eureka.css" />
+    <Content Include="css\colorscheme-mono.css" />
+    <Content Include="css\colorscheme-sacramento.css" />
+    <Content Include="css\colorscheme-santabarbara.css" />
+    <Content Include="css\colorscheme-pasorobles.css" />
+    <Content Include="css\colorscheme-orangecounty.css" />
     <Content Include="css\colorscheme-oceanside.css" />
+    <Content Include="css\colorscheme-sierra.css" />
+    <Content Include="css\colorscheme-trinity.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\_notes\dwsync.xml" />
     <Content Include="Default.aspx" />
