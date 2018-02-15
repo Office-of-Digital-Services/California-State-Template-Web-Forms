@@ -225,10 +225,7 @@ Select a color scheme:
 <!--  Navigation -->
         <div class="navigation-search">
 
-            <div id="head-search" class="search-container">
-                <!-- Google Custom Search -->
-                <gcse:searchbox-only resultsUrl="/serp.aspx" enableAutoComplete="true"></gcse:searchbox-only>
-            </div>
+
            
             <!-- Include Navigation -->
             <!-- Top Level Navigation Only -->
@@ -258,6 +255,11 @@ Select a color scheme:
                     </li>
                 </ul>
             </nav>
+
+             <div id="head-search" class="search-container">
+                <!-- Google Custom Search -->
+                <gcse:searchbox-only resultsUrl="/serp.aspx" enableAutoComplete="true"></gcse:searchbox-only>
+            </div>
         </div>
     </header>
     <div class="header-decoration"></div>
