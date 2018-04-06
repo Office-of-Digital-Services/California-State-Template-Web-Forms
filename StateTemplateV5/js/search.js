@@ -19,7 +19,7 @@
 
         // search icon is added before search button (search button is set to opacity 0 in css)
         $("input.gsc-search-button").before("<span class='ca-gov-icon-search search-icon' aria-hidden='true'></span>");
-
+        $("button.gsc-search-button").before("<span class='ca-gov-icon-search search-icon' aria-hidden='true'></span>");
 
         $searchText.on("click", function () {
             addSearchResults();
