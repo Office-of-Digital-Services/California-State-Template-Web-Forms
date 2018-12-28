@@ -11,7 +11,7 @@
 <head runat="server">
     <!--
         California State Template
-        Version 5.0.3
+        Version 5.0.4
         
         Based on Twitter Bootstrap
     -->
@@ -35,7 +35,7 @@
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/css/cagov.core.css">
+<link rel="stylesheet" href="/css/cagov.core.min.css">
 
 <!--
 Step 3
@@ -52,7 +52,7 @@ Select a color scheme:
 <link rel="stylesheet" href="/css/colorscheme-sacramento.css">
 -->
 
-<link rel="stylesheet" href="/css/colorscheme-oceanside.css">
+<link rel="stylesheet" href="/css/colorscheme-oceanside.min.css">
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="/css/custom.css">
@@ -111,7 +111,7 @@ Select a color scheme:
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXXXX-XX']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
+  _gaq.push(['_setAccount', 'UA-20973992-20']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
   _gaq.push(['_gat._anonymizeIp']);
   _gaq.push(['_setDomainName', '.ca.gov']);
   _gaq.push(['_trackPageview']);
@@ -315,7 +315,7 @@ Select a color scheme:
 
 
 <!-- Load template core -->
-<script src="/js/cagov.core.js"></script>
+<script src="/js/cagov.core.min.js"></script>
 <script src="/js/search.js "></script>
 
 
