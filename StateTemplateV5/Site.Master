@@ -62,8 +62,6 @@ Select a color scheme:
 <script src="/js/libs/selectivizr-min.js"></script>
 <![endif]-->
 
-<!-- modernizr.com, feature detection -->
-<script src="/js/libs/modernizr-3.6.0.min.js"></script>
 
 <!-- For iPad 3-->
 <link rel="apple-touch-icon" sizes="144x144" href="/images/template2014/apple-touch-icon-144x144.png">
