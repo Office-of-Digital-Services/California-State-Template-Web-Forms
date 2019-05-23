@@ -7,10 +7,7 @@
     }
 
     .mobile-controls .mobile-header-icons {
-        display: block;
-        height: 61px;
-        width: 100%;
-        cursor: default;
+       display: none;
     }
 
     #head-search .container {
@@ -23,19 +20,19 @@
     }
 </style>           
     <!--Search result section-->
-
+    <div class="section section-default">
     <div class="container search-results-header">
-        <div class="row p-t-lg">
+        <div class="row">
             <div class="col-11">
                 <form id="SearchForm" class="pos-rel " action="/serp.aspx">
                     <label class="sr-only" for="q">Custom Google Search</label>
-                    <input type="text" id="query" name="q" placeholder="Custom Search" class="w-100 height-50  brd-solid-1 brd-gray-light  p-x-sm" />
+                    <input type="text" id="query" name="q" placeholder="Search this website" class="w-100 height-50  brd-solid-1 brd-gray-light  p-x-sm" />
                     <button type="submit" class="pos-abs gsc-search-button right-0 top-0 width-50 height-50 border-0"><span class="ca-gov-icon-search font-size-30" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
                 </form>
             </div>
         </div>
     </div>
-
+</div>
                 <div class="section">
                     <div class="container">
                         <h1>Your Search Results:</h1>

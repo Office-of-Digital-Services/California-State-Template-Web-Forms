@@ -48,10 +48,6 @@
                                     This is the .NET Web Forms package  that includes setup instructions
                                 </li>
                                 <li>
-                                    <strong><a href="https://github.com/Office-of-Digital-Innovation/California-State-Template-PHP" target="_blank">PHP</a></strong><br>
-                                    This is the PHP package that includes setup instructions
-                                </li>
-                                <li>
                                     <strong><a href="http://caweb.ca.gov/" target="_blank">WordPress CMS</a></strong><br>
                                     Please contact
                                     <a href="mailto:Info.Eservices@state.ca.gov">Info.Eservices@state.ca.gov</a> for more information
