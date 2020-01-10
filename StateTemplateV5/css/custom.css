@@ -7,11 +7,11 @@
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/background-primary.jpg');
     background-size: cover;
 }
 
 .home-logo {
     border: 2px solid #fff;
-    padding: 4px 9px 4px 9px;
+    padding: 5px 9px 5px 9px;
 }

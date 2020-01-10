@@ -11,7 +11,7 @@
 <head runat="server">
     <!--
         California State Template
-        Version 5.0.14
+        Version 5.5.11
         
         Based on Twitter Bootstrap
     -->
@@ -32,7 +32,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
 <!-- Google Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,600|Source+Sans+Pro:400,700" rel="stylesheet">
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/css/cagov.core.min.css">
@@ -57,11 +57,34 @@ Select a color scheme:
 <!-- Custom CSS -->
 <link rel="stylesheet" href="/css/custom.css">
 
+<script src="/js/search.js "></script>
+
+
 <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="/js/libs/selectivizr-min.js"></script>
 <![endif]-->
 
+    <!-- Load jQuery from CDN with fallback to local copy -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script>
+    //Fall back to local copy if no jquery found
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='/js/libs/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+</script>
+<!-- Load jQuery migrate from CDN with fallback to local copy -->
+<script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"></script>
+<script>
+        //Fall back to local copy if no jQuery migrate found
+        if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
+            document.write(unescape("%3Cscript src='/js/libs/jquery-migrate.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+
+</script>
 
 <link rel="apple-touch-icon-precomposed" sizes="100x100" href="/images/apple-touch-icon-precomposed.png">
     <link rel="icon" sizes="192x192" href="/images/apple-touch-icon-192x192.png">
@@ -88,32 +111,13 @@ Select a color scheme:
 <![endif]-->
 
 
-<!-- Load jQuery from CDN with fallback to local copy -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
 
-<script>
-    //Fall back to local copy if no jquery found
-    if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='/js/libs/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-    }
-</script>
-<!-- Load jQuery migrate from CDN with fallback to local copy -->
-<script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"></script>
-<script>
-        //Fall back to local copy if no jQuery migrate found
-        if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
-            document.write(unescape("%3Cscript src='/js/libs/jquery-migrate.min.js' type='text/javascript'%3E%3C/script%3E"));
-        }
-
-</script>
 
 <!-- Include Google Analytics -->
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20973992-20']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
   _gaq.push(['_gat._anonymizeIp']);
   _gaq.push(['_setDomainName', '.ca.gov']);
   _gaq.push(['_trackPageview']);
@@ -133,6 +137,14 @@ Select a color scheme:
 </head>
 
 <body id="MasterBodyNode" runat="server">
+<script>
+    //makes the browser wait to display the page until it's fully loaded.
+    // Use it if page contains primary or slideshow banner to make sure page content loads smouthly
+    $('body').css('opacity', 0);
+    $(window).load(function () {
+        $("body").fadeTo("slow", 1);
+    });
+</script>
     <header id="header" class="global-header fixed">
         <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
         <!-- Utility Header -->
@@ -188,11 +200,11 @@ Select a color scheme:
             <span class="mobile-control-group mobile-header-icons">
                 <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
             </span>
-            <div class="mobile-control-group main-nav-icons float-right">
-                <button class="mobile-control toggle-search float-left m-l">
+            <div class="mobile-control-group main-nav-icons">
+        <button class="mobile-control toggle-search">
                     <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
                 </button>
-                <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="navigation">
+                <button id="nav-icon3" aria-expanded="false" aria-controls="navigation" data-toggle="collapse" data-target="#navigation">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -230,7 +242,7 @@ Select a color scheme:
                         <a href="/ContactUs.aspx" class="first-level-link"><span class="ca-gov-icon-lightbulb" aria-hidden="true"></span>Contact Us</a>
                     </li>
                     <li class="nav-item" id="nav-item-search">
-                        <a href="javascript:;" class="first-level-link" aria-label="Search Button"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+                        <button class="first-level-link"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</button>
                     </li>
                 </ul>
             </nav>
@@ -254,7 +266,7 @@ Select a color scheme:
     <asp:ContentPlaceHolder ID="BannerContent" runat="server">
     </asp:ContentPlaceHolder>
 
-    <div class="section" role="main">
+    <div class="container p-y-lg" role="main">
     <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
 
@@ -302,15 +314,8 @@ Select a color scheme:
 
 <!-- Load template core -->
 <script src="/js/cagov.core.min.js"></script>
-<script src="/js/search.js "></script>
 
 
-<script>
-$(document).ready(function() {
-    // Backward compatability fix for removing wrapper on new "sections"
-    $('.main-primary > .section').closest('div.wrapper').removeClass('wrapper');
-});
-</script>
 </body>
 </html>
 
