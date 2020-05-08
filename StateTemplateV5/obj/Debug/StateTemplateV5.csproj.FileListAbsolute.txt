@@ -49,8 +49,6 @@ C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-For
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\StateTemplateV5Beta.dll
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\StateTemplateV5Beta.pdb
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\Antlr3.Runtime.dll
-C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\AspNet.ScriptManager.jQuery.dll
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\Microsoft.AspNet.FriendlyUrls.dll
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
 C:\Users\konstantin.koryaka\Documents\projects\California-State-Template-Web-Forms\StateTemplateV5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll

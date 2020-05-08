@@ -11,8 +11,6 @@
 <head runat="server">
     <!--
         California State Template
-        Version 5.5.14
-        
         Based on Twitter Bootstrap
     -->
   <meta charset="utf-8">
@@ -66,18 +64,18 @@ Select a color scheme:
 <![endif]-->
 
     <!-- Load jQuery from CDN with fallback to local copy -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 
 <script>
     //Fall back to local copy if no jquery found
     if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='/js/libs/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='/js/libs/jquery.js' type='text/javascript'%3E%3C/script%3E"));
     }
 </script>
 <!-- Load jQuery migrate from CDN with fallback to local copy -->
-<script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.0.min.js"></script>
 <script>
         //Fall back to local copy if no jQuery migrate found
         if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
