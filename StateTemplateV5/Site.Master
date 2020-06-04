@@ -53,7 +53,25 @@ Select a color scheme:
 <link rel="stylesheet" href="/css/colorscheme-oceanside.min.css">
 
 <!-- Custom CSS -->
-<link rel="stylesheet" href="/css/custom.css">
+<style>
+    .banner-main {
+    text-align: center;
+    background-color: #0C6995;
+    color: #fff;
+    width: 100%;
+    padding: 15px 0 20px 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('images/background-primary.jpg');
+    background-size: cover;
+}
+
+.home-logo {
+    border: 2px solid #fff;
+    padding: 5px 9px 5px 9px;
+}
+</style>
 
 <script src="/js/search.js "></script>
 
